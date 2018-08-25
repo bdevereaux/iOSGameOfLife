@@ -62,12 +62,14 @@ class ViewController: UIViewController {
                 for j in 0..<world!.height {
                     if(world!.world[i][j]) {
                         UIColor.green.setFill()
+                        let rect = CGRect(x: i * 12, y: j * 12, width: 12, height: 12)
+                        UIRectFill(rect)
                     }
-                    else {
-                        UIColor.black.setFill()
-                    }
-                    let rect = CGRect(x: i * 12, y: j * 12, width: 12, height: 12)
-                    UIRectFill(rect)
+//                    else {
+//                        UIColor.black.setFill()
+//                    }
+//                    let rect = CGRect(x: i * 12, y: j * 12, width: 12, height: 12)
+//                    UIRectFill(rect)
                 }
             }
         }
